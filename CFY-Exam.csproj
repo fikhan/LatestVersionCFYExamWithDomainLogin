@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.6.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="5.0.2" />
@@ -23,7 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Controllers\Login\" />
     <Folder Include="Controllers\Preparation\" />
+    <Folder Include="Models\Login\" />
     <Folder Include="Models\Preparation\" />
     <Folder Include="Views\Preparation\" />
   </ItemGroup>
