@@ -38,7 +38,7 @@ namespace TestAD.Controllers
                 
                 if (adContext.ValidateCredentials(login.LoginId, login.password) == true)
                 {
-                    return View();
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
