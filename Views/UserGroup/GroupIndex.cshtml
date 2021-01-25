@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewData["Title"] = "GroupIndex";
+}
+
+<h1>GroupIndex</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login - CFY Exam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/lib/Login1/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/lib/Login1/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/lib/Login1/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/lib/Login1/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/lib/Login1/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/lib/Login1/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/lib/Login1/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/lib/Login1/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/lib/Login1/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/lib/Login1/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/lib/Login1/css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+
+                <h2>Create User Groups</h2>
+                <div style="border:solid">
+                    <b>Enter Group Code </b>@Html.TextBox("EmployeeName", null, new { @class = "form - control" }) <br />
+                    <b>Enter Group Name </b>@Html.TextBox("EmployeeName", null, new { @class = "form - control" }) <br />
+                    <b>Select Status of the Group </b><select class="form-control" id="UserGroupStatus" name="UserGroupStatus">
+                        <option value="">Select Status</option>
+                        <option>Active</option>
+                        <option>Inactive</option>
+                    </select>
+                    @Html.TextBox("sub_button", "Create Group", new { type = "submit" })
+                </div>
+
+                <h2>Create Priviliges</h2>
+                <div style="border:solid">
+                    <b>Enter Privilige Code </b>@Html.TextBox("privcode", null, new { @class = "form - control" }) <br />
+                    <b>Enter Privilige Name </b>@Html.TextBox("privname", null, new { @class = "form - control" }) <br />
+                    <b>Enter Privilige Type </b>@Html.TextBox("privtype", null, new { @class = "form - control" }) <br />
+                    <b>Select Status of the Privilige </b><select class="form-control" id="privstatus" name="privstatus">
+                        <option value="">Select Status</option>
+                        <option>Active</option>
+                        <option>Inactive</option>
+                    </select>
+                    @Html.TextBox("sub_button", "Create Privilige", new { type = "submit" })
+                </div>
+
+                <h2>Relate Groups with Priviliges</h2>
+                <div style="border:solid">
+                    <b>Select User Group</b>
+                    <br/><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                     <label for="vehicle1"> Group 1</label><br>
+                     <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                     <label for="vehicle2"> Group 2</label><br>
+                                                                                                                                   <br /><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                                                                                                                                         <br /> <label for="vehicle3"> I have a boat</label><br>
+                    <b>Select Priviliges</b>
+                    <br/><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Privilige 1</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Privilige 2</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Privilige 3</label><br>
+                    @Html.TextBox("sub_button", "Relate Group with Privilige", new { type = "submit" })
+                </div>
+
+                    <!--===============================================================================================-->
+                    <script src="~/lib/Login1/vendor/jquery/jquery-3.2.1.min.js"></script>
+                    <!--===============================================================================================-->
+                    <script src="~/lib/Login1/vendor/animsition/js/animsition.min.js"></script>
+                    <!--===============================================================================================-->
+                    <script src="~/lib/Login1/vendor/bootstrap/js/popper.js"></script>
+                    <script src="~/lib/Login1/vendor/bootstrap/js/bootstrap.min.js"></script>
+                    <!--===============================================================================================-->
+                    <script src="~/lib/Login1/vendor/select2/select2.min.js"></script>
+                    <!--===============================================================================================-->
+                    <script src="~/lib/Login1/vendor/daterangepicker/moment.min.js"></script>
+                    <script src="~/lib/Login1/vendor/daterangepicker/daterangepicker.js"></script>
+                    <!--===============================================================================================-->
+                    <script src="~/lib/Login1/vendor/countdowntime/countdowntime.js"></script>
+                    <!--===============================================================================================-->
+                    <script src="~/lib/Login1/js/main.js"></script>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
