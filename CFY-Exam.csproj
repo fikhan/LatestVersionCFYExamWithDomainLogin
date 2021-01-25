@@ -21,12 +21,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="System.DirectoryServices.AccountManagement" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Login\" />
     <Folder Include="Controllers\Preparation\" />
-    <Folder Include="Models\Login\" />
     <Folder Include="Models\Preparation\" />
     <Folder Include="Views\Preparation\" />
   </ItemGroup>
